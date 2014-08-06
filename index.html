@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Snoutwood Trotters</title>
+    <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+</head>
+<body>
+    <header class="clearfix">
+      <div id="top-section" class="clear">
+        <div class="logo">
+          <img src="images/Snoutwood trotters-18.png"/>
+          <p>Laburnum Lane, Great Sankey, Warrington, WA5 3LE</p>
+          <h2>Next sale: <i>Saturday 29th March<br>(<span class="next-sale"></span>)</i></h2>
+          <ul>
+            <div class="social">
+              <li><a href="https://www.facebook.com/pages/Snoutwood-Trotters/179045218844748?fref=ts"target="_blank"><img src="images/facebook.png"></a></li>
+              <li><a href="https://twitter.com/Snoutwood" target="_blank"><img src="images/twitter.png"></a></li>
+              <li><a href="mailto:snoutwoodtrotters@hotmail.co.uk"><img src="images/mail.png"></a></li>
+              <h3>07933448282</h3>
+            </div>
+          </ul>
+        </div>
+      </div>
+
+      <div class="nav" id="navbar">
+        <ul>
+          <li><a href="index.html#navbar"><img src="images/Snoutwood trotters-02.png" onmouseover="this.src='images/Snoutwood-home.png'" onmouseout="this.src='images/Snoutwood trotters-02.png'"/></a></li>
+          <li><a href="about.html#navbar"><img src="images/Snoutwood trotters-03.png" onmouseover="this.src='images/Snoutwood-aboutus.png'" onmouseout="this.src='images/Snoutwood trotters-03.png'"/></a></li>
+          <li><a href="products.html#navbar"><img src="images/Snoutwood trotters-04.png" onmouseover="this.src='images/Snoutwood-ourproducts.png'" onmouseout="this.src='images/Snoutwood trotters-04.png'"/></a></li>
+          <li><a href="recipes/index.html#navbar"><img src="images/Snoutwood trotters-05.png" onmouseover="this.src='images/Snoutwood-recipes.png'" onmouseout="this.src='images/Snoutwood trotters-05.png'"/></a></li>
+          <li><a href="blog.html#navbar"><img src="images/Snoutwood trotters-06.png" onmouseover="this.src='images/Snoutwood-blog.png'" onmouseout="this.src='images/Snoutwood trotters-06.png'"/></a></li>
+          <li><a href="map.html#navbar"><img src="images/Snoutwood trotters-07.png" onmouseover="this.src='images/Snoutwood-findus.png'" onmouseout="this.src='images/Snoutwood trotters-07.png'"/></a></li>
+        </ul>
+      </div>
+    </header>
+
+
+       <div class="images">
+            <div class="quote">
+                <h1>WELCOME TO SNOUTWOOD TROTTERS</h1> 
+            </div>
+        <!--JQuery Arrays-->
+        </div>
+
+    <div class="intro">
+    <h1>-Snoutwood Trotters-</h1>
+    <h4>Welcome to Snoutwood Trotters, an organic pork sale based at Laburnum Farm, in Warrington, Cheshire. All of our pigs are Gloucestershire breed yada yada yada. They live long happy lives out in our field. Take a look around our site to learn more about us, and we hope to see you one Saturday.</h4>
+    <p>Scroll down for our upcoming sale dates!</p>
+</div>
+
+
+
+<div class="form">
+        <h1>-Sign Up-</h1>
+
+        <h2>Get all the latest news from the farm including our upcoming sale
+        dates.</h2>
+
+        <h3>No spam. Just ham.</h3>
+
+        <div id="mc_embed_signup">
+            <form action=
+            "http://snoutwoodtrotters.us3.list-manage2.com/subscribe/post?u=60fca7efda930eb4344a98a0c&amp;id=2c508cfe49"
+            class="validate" id="mc-embedded-subscribe-form" method="post"
+            name="mc-embedded-subscribe-form" novalidate="" target="_blank">
+                <div class="mc-field-group">
+                    <input class="required email" id="mce-EMAIL" name="EMAIL"
+                    placeholder="Enter Email" type="email" value="">
+                </div>
+
+                <div class="clear" id="mce-responses">
+                    <div class="response" id="mce-error-response" style=
+                    "display:none"></div>
+
+                    <div class="response" id="mce-success-response" style=
+                    "display:none"></div>
+                </div>
+
+                <div style="position: absolute; left: -5000px;">
+                    <input name="b_60fca7efda930eb4344a98a0c_2c508cfe49" type=
+                    "text" value="">
+                </div>
+
+                <div class="clear">
+                <span id="change">
+                    <input class="submitbutton" id="mc-embedded-subscribe"name=
+                    "subscribe" type="submit" value="Subscribe">
+                </span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="sale">
+        <h1>-Upcoming Sales-</h1>
+        <h2>Our sale runs fortnightly on every alternate Saturday. The sale starts at 9am, and we finish when the stock runs out!</h2>
+        <p>Arrive early to avoid missing out on your favourite produce.</p>
+        <h3>Here are the dates to stick in your diary:</h3>
+            <ul>
+                <li>Saturday 22nd March 2014</li>
+                <li>Saturday 5th April 2014</li>
+                <li>Saturday 19th April 2014</li>
+            </ul>
+    </div>
+
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript" src="js/moment.min.js"></script>
+    <script type="text/javascript">
+        var next = moment("2014-03-29T10:00:00.937").fromNow();
+        $(".next-sale").text(next);
+    </script>
+</body>
+</html>

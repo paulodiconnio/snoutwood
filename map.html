@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Snoutwood Trotters</title>
+    <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+</head>
+
+<body>
+    <header class="clearfix">
+      <div id="top-section" class="clear">
+        <div class="logo">
+          <img src="images/Snoutwood trotters-18.png"/>
+          <p>Laburnum Lane, Great Sankey, Warrington, WA5 3LE</p>
+          <h2>Next sale: <i>Saturday 29th March<br>(<span class="next-sale"></span>)</i></h2>
+          <ul>
+            <div class="social">
+              <li><a href="https://www.facebook.com/pages/Snoutwood-Trotters/179045218844748?fref=ts"target="_blank"><img src="images/facebook.png"></a></li>
+              <li><a href="https://twitter.com/Snoutwood" target="_blank"><img src="images/twitter.png"></a></li>
+              <li><a href="mailto:snoutwoodtrotters@hotmail.co.uk"><img src="images/mail.png"></a></li>
+              <h3>07933448282</h3>
+            </div>
+          </ul>
+        </div>
+      </div>
+
+      <div class="nav" id="navbar">
+        <ul>
+          <li><a href="index.html#navbar"><img src="images/Snoutwood trotters-02.png" onmouseover="this.src='images/Snoutwood-home.png'" onmouseout="this.src='images/Snoutwood trotters-02.png'"/></a></li>
+          <li><a href="about.html#navbar"><img src="images/Snoutwood trotters-03.png" onmouseover="this.src='images/Snoutwood-aboutus.png'" onmouseout="this.src='images/Snoutwood trotters-03.png'"/></a></li>
+          <li><a href="products.html#navbar"><img src="images/Snoutwood trotters-04.png" onmouseover="this.src='images/Snoutwood-ourproducts.png'" onmouseout="this.src='images/Snoutwood trotters-04.png'"/></a></li>
+          <li><a href="recipes/index.html#navbar"><img src="images/Snoutwood trotters-05.png" onmouseover="this.src='images/Snoutwood-recipes.png'" onmouseout="this.src='images/Snoutwood trotters-05.png'"/></a></li>
+          <li><a href="blog.html#navbar"><img src="images/Snoutwood trotters-06.png" onmouseover="this.src='images/Snoutwood-blog.png'" onmouseout="this.src='images/Snoutwood trotters-06.png'"/></a></li>
+          <li><a href="map.html#navbar"><img src="images/Snoutwood trotters-07.png" onmouseover="this.src='images/Snoutwood-findus.png'" onmouseout="this.src='images/Snoutwood trotters-07.png'"/></a></li>
+        </ul>
+      </div>
+    </header>
+ <div class="map">
+     <h2>Find us</h2>
+     <p>Snoutwood Trotters is part of Laburnum Farm. We are on Laburnum Lane just off Liverpool Road <b>(A57)</b>, which can be reached by the <b>M62</b>, <b>junction 7.</b></p>
+
+
+    <div id="map_canvas">
+    </div>
+
+    <h3>If you still need help getting here, then enter your postcode below and Google Maps will lead you right to our barn door!</h3>
+
+    <form class ="" id="form" action="http://maps.google.com/maps" method="get" target="_blank">
+   <input id="postcode" type="text" name="saddr" placeholder="Enter Postcode"/>
+   <br/>
+   <input type="hidden" name="daddr" value="WA5 3LE"/>
+   <input id="getdirections" type="submit" value="Get directions"/>
+</div>
+</form>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/map.js"></script>
+    <script type="text/javascript" src="js/moment.min.js"></script>
+    <script type="text/javascript">
+        var next = moment("2014-03-29T10:00:00.937").fromNow();
+        $(".next-sale").text(next);
+    </script>
+
+</body>
+</html>
