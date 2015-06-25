@@ -964,7 +964,9 @@ header > div:not([class]) div {
 .footer-distributed .footer-center h3 {
   color: white;
   font-size: 15px;
+  text-align: center;
 }
+
 
 .footer-distributed .footer-center i{
   background-color:  #33383b;
@@ -1011,6 +1013,11 @@ header > div:not([class]) div {
   color: white;
   position: relative; 
   left: 5%;
+  
+}
+
+.footer-distributed .footer-right h3{
+  text-align: center;
   
 }
 
