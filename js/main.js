@@ -109,7 +109,7 @@ $(function(){
         $('html,body')
         // added the stop() function to prevent animations from queueing up 
         .stop().animate({
-          scrollTop: target.offset().top
+          scrollTop: target.offset().top - 135
         }, 1000).find("h2 > a")
         
         // added a top padding to make the title visible on my fixed top nav menu
