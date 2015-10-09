@@ -42,7 +42,7 @@ header {
 
 
 #top-section {
-	height: 90vh;
+	height: 98vh;
   width: auto;
 }
 
@@ -440,6 +440,11 @@ header > div:not([class]) div {
   margin-top: 100px;
   width: auto;
 }
+
+/*-Booking-*/
+
+select {cursor: pointer;}
+
 
 
 /*.row {
