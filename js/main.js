@@ -4,7 +4,6 @@ $("#top-section").bgswitcher({
   interval: 9000,
   duration: 4000,
 
-
 });
 
 

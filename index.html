@@ -5,6 +5,7 @@
     <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
     <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
     <meta charset="utf-8">
 </head>
@@ -112,12 +113,13 @@
  </div>
 </div>
 
- <div class="booking" id="booking">
+ <div class="booking">
   <h1>Booking Enquiries</h1>
 
-  
-   <form action="http://formspree.io/snoutwoodtrotters@hotmail.co.uk"
+<div class="enquiry">
+   <form id="form-div" action="http://formspree.io/snoutwoodtrotters@hotmail.co.uk"
       method="POST">
+
     <select>
         <option value ="select">Select Enquiry</option>
         <option value ="hogroast">Hog Roast</option>
@@ -129,12 +131,16 @@
 
     <input type="email" name="_replyto" placeholder="e-mail" id="_replyto" required>
 
-    <textarea name="enquiry" placeholder="Your enquiry: Give us an idea of the type of event, date & no. of people you would like us to cater for."id="enquiry" required></textarea>
- 
+    <input type="phone" name="phone" placeholder="Phone number (optional)" id="_replyto" optional>
+
+    <textarea name="enquiry" style= "height:200px; width:400px" placeholder="Your enquiry: Give us an idea of the type of event, date & no. of people you would like us to cater for."id="enquiry" required></textarea>
+
     <input type="submit" value="Send">
     </form>
- </div>
+
+  </div>
 </div>
+
 
 
 <div class="about" id="ourStory">
