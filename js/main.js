@@ -1,5 +1,5 @@
 $("#top-section").bgswitcher({
-  images: ["images/snoutwood-bg-2.jpg", "images/b..jpg", "images/f1.jpg","images/snoutwood-bg-1.jpg"], // Background images
+  images: ["images/snoutwood-bg-2.jpg", "images/f1.jpg","images/snoutwood-bg-1.jpg"], // Background images
   effect: "fade", // fade, blind, clip, slide, drop, hide
   interval: 9000,
   duration: 4000,
